@@ -10,7 +10,7 @@ steps:
     command: "node -v"
 
   - label: "Build Production"
-    command: "npm run build -- --prod"
+    command: "npm build --prod"
 
   - block: "Deploy"
     prompt: "Deploy to production?"
