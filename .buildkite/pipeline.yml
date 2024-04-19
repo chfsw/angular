@@ -3,12 +3,11 @@ steps:
     command: "npm install"
 
   - label: "Run Linter"
-    command: 
-      - ./bin/test.sh
-      - node -v
+    command: "./bin/test.sh"
+
 
   - label: "Run Unit Tests"
-    command: "npm run test"
+    command: "node -v"
 
   - label: "Build Production"
     command: "npm run build -- --prod"
