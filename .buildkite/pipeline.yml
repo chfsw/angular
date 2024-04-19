@@ -3,7 +3,7 @@ steps:
     command: "npm install"
 
   - label: "Run Linter"
-    command: "npm run lint"
+    command: "./bin/test.sh"
 
   - label: "Run Unit Tests"
     command: "npm run test"
