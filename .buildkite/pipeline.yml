@@ -4,23 +4,15 @@ steps:
 
   - label: "Run Linter"
     command: "npm run lint"
-    agents:
-      queue: 'default'
 
   - label: "Run Unit Tests"
     command: "npm run test"
-    agents:
-      queue: 'default'
 
   - label: "Build Production"
     command: "npm run build -- --prod"
-    agents:
-      queue: 'default'
 
   - block: "Deploy"
     prompt: "Deploy to production?"
 
   - label: "Deploy to Production"
     command: "deploy-scripts/deploy.sh"
-    agents:
-      queue: 'default'
