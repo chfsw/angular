@@ -2,7 +2,7 @@ steps:
   - label: "Install Dependencies"
     command: "npm install"
     agents:
-      queue: 'default'
+      queue: 'default-queque'
 
   - label: "Run Linter"
     command: "npm run lint"
